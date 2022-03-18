@@ -10,14 +10,39 @@ In this demo I'm getting news articles regarding **Python and Excel**
 # Files
 - newsapi.py
 - requirements.txt
+- config.ini
 - extracted_news_articles.csv
+
+# API
+You have to registry for a API key to get this to work.
+
+It is free and you do it at: [newscatcherapi.com](https://newscatcherapi.com/)
+
+When you have confirmed your email, you get access to your API key
+
+![](./image/news_api.jpg)
+
+You have to put *your* API key in the **config.ini** file:
+
+```txt
+[newsreader]
+api_key = o1xxxxxxxxxxxxxxxxxxxxxxxxxxxx7wY
+```
+The **config.ini** file is include in **.gitignore**
 
 # How to run
 - Clone this GitHub Repository to your local computer
 - Make a new Virtual Environment in the GitHub folder - **news_env**
-- Install the nesery modules from the **requirements.txt** file
-    - pip3 install -r requirements.txt
-- 
+- **cd** into **news_env**
+- Activate the Virtual Environment
+    - **.\Scripts\activate** (*Windows*)
+    - **bin/activate** (*macOS*) 
+- **cd** to the folder with the **requirements.txt** file
+- Install the necessary modules from the **requirements.txt** file
+    - **pip3 install -r requirements.txt**
+- Run **newsapi.py**
+
+**Note**: *Make sure that the* **.gitignore** *file include your Virtual Environment* - **news_env** - *We don not what that cloned into GitHub.*
 
 # Links
 - [newscatcherapi.com](https://newscatcherapi.com/)
