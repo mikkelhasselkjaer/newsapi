@@ -45,7 +45,7 @@ The **config.ini** file is include in **.gitignore**
     - **pip3 install -r requirements.txt**
 - Run **newsapi.py**
 
-**Note**: *Make sure that the* **.gitignore** *file include your Virtual Environment* - **news_env** - *We don not what that cloned into GitHub.*
+**Note**: *Make sure that the* **.gitignore** *file include your Virtual Environment* - **news_env** and **config.ini**
 
 # Links
 - [newscatcherapi.com](https://newscatcherapi.com/)
