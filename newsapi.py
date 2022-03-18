@@ -8,6 +8,7 @@ import json
 # Preinstalled packages
 import requests
 import pandas as pd
+import configparser
 
 # Folder to save your .csv files
 # Windows
@@ -19,8 +20,10 @@ os.chdir('C:\\Users\\tuehe\\Documents\\GitHub\\newsapi')
 # URL of our News API
 base_url = 'https://api.newscatcherapi.com/v2/search'
 
-# Your API key
-X_API_KEY = 'o1dOC6_gsS3rCsXT5sSyAf0cS4LCaRpOvx7lUJDu7wY'
+# Your API key from config.ini
+config = configparser.ConfigParser()
+config.read('config.ini')
+X_API_KEY = config.get('newsreader', 'api_key')
 
 # Make an API call
 headers = {'x-api-key': X_API_KEY}
