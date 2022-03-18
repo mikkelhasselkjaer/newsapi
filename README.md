@@ -8,10 +8,13 @@ In this demo I'm getting news articles regarding **Python and Excel**
 ![](./image/news_1.jpg)
 
 # Files
-- newsapi.py
-- requirements.txt
-- config.ini
-- extracted_news_articles.csv
+- *newsapi.py*
+- *requirements.txt*
+- *config.ini*
+- *extracted_news_articles.csv*
+- *.gitignore*
+
+![](./image/news_2.jpg)
 
 # API
 You have to registry for a API key to get this to work.
